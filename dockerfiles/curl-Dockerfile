@@ -1,0 +1,5 @@
+FROM alpine
+
+ADD https://github.com/moparisthebest/static-curl/releases/download/v7.84.0/curl-amd64 /usr/bin/curl
+RUN chmod +x /usr/bin/curl
+
