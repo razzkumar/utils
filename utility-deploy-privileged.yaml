@@ -1,23 +1,23 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: utilities
+  name: utils
   labels:
-    app: utilities
+    app: utils
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: utilities
+      app: utils
   template:
     metadata:
       labels:
-        app: utilities
+        app: utils
     spec:
       hostNetwork: true
       containers:
-      - name: utilities
-        image: quay.io/sudermanjr/utilities:2.0
+      - name: utils
+        image: razzkumar/utils:latest
         # Just spin & wait forever
         command: [ "/bin/bash", "-c", "--" ]
         args: [ "while true; do sleep 30; done;" ]
