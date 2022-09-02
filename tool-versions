@@ -1,0 +1,14 @@
+helm 3.8.2
+
+k6 0.39.0
+kops v1.24.1
+kube-capacity v0.7.1
+kubectl 1.25.0
+linkerd stable-2.12.0
+nova 2.3.4
+pluto 5.10.6
+rbac-lookup 0.7.1
+shellcheck 0.8.0
+terraform 1.2.8
+vault 1.11.3
+yq 4.27.3
